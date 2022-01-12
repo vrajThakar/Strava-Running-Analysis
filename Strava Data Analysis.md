@@ -1,3 +1,3 @@
 Strava Data Analysis
 
-Vraj Thakar
+-Vraj Thakar
