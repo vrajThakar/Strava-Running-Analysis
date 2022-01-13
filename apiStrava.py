@@ -1,4 +1,3 @@
-
 import requests
 import urllib3
 import pandas as pd
@@ -14,9 +13,9 @@ activites_url = "https://www.strava.com/api/v3/athlete/activities"
 
 
 payload = {
-    'client_id': "76418",
-    'client_secret': '0ff5f11c39f57c39f4ad64bd769136881739ec73',
-    'refresh_token': '579f760be58c4af05724cfe57544d93510d1bb5d',
+    'client_id': '___',
+    'client_secret': '___',
+    'refresh_token': '___',
     'grant_type': "refresh_token",
     'f': 'json'
 }
@@ -54,12 +53,12 @@ activities['type'].value_counts()
 
 
 
-
 runs = activities.loc[activities['type'] == 'Run'] 
 runs.head(5)
 sns.set(style="ticks", context="talk")
 sns.scatterplot(x='distance', y = 'average_speed', data = runs).set_title("Average Speed vs Distance")
 sns.scatterplot(x='distance', y = 'max_speed', data = runs).set_title("Average Cadence vs Distance")
+
 
 
 fig = plt.figure()

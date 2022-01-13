@@ -1,3 +1,4 @@
-Strava Data Analysis
+# Strava Data Analysis
 
--Vraj Thakar
+Retrieving and analyzing running data from Strava's API.
+
